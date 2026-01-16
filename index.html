@@ -1,198 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>English with Tatev</title>
+  <meta charset="UTF-8">
+  <title>English with Tatev</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: #f6f1eb;
+      color: #2f2f2f;
+      line-height: 1.6;
+    }
 
-<style>
-body {
-  margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: #F4F1EC;
-  color: #2E2E2E;
-  text-align: center;
-}
+    h1, h2, h3 {
+      color: #1f1f1f;
+      letter-spacing: 0.5px;
+    }
 
-/* HERO */
-.hero {
-  background: #2E2E2E;
-  color: #F4F1EC;
-  padding: 90px 20px;
-}
+    .hero {
+      background: linear-gradient(to right, #1c1c1c, #2e2e2e);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
 
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
 
-.hero p {
-  font-size: 18px;
-  margin: 8px 0;
-}
+    .hero p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
 
-.btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 14px 35px;
-  background: #D4AF37;
-  color: #2E2E2E;
-  text-decoration: none;
-  border-radius: 25px;
-  font-weight: bold;
-  transition: 0.3s;
-}
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 28px;
+      background-color: #c6a26d;
+      color: #1c1c1c;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
 
-.btn:hover {
-  background: #c9a635;
-}
+    .btn:hover {
+      background-color: #b2905f;
+    }
 
-/* SECTIONS */
-section {
-  padding: 60px 20px;
-}
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-.box {
-  background: #ffffff;
-  max-width: 780px;
-  margin: 25px auto;
-  padding: 35px;
-  border-radius: 18px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-}
+    .box {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
 
-h2 {
-  color: #6B5E55;
-  margin-bottom: 18px;
-  font-size: 26px;
-}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
 
-p {
-  line-height: 1.7;
-  font-size: 16px;
-}
+    .topics span {
+      display: inline-block;
+      background: #e4d6c3;
+      padding: 10px 18px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 14px;
+    }
 
-/* TOPIC LIST */
-.topic {
-  font-size: 16px;
-  margin: 6px 0;
-}
-
-/* FOOTER CONTACT */
-.contact {
-  background: #2E2E2E;
-  color: #F4F1EC;
-  padding: 40px 20px;
-}
-
-.contact p {
-  margin: 8px 0;
-}
-</style>
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #1c1c1c;
+      color: white;
+    }
+  </style>
 </head>
-
 <body>
 
-<!-- HERO -->
-<div class="hero">
-  <h1>English with Tatev</h1>
-  <p>Speak English with confidence, not fear.</p>
-  <p>Personalized English coaching for adults and professionals who want real, natural communication.</p>
-  <a class="btn" href="#contact">Book a Trial Class</a>
-</div>
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Personalized English Classes with Clarity & Calm</h1>
+    <p>For adults, professionals and children. 10 years of international teaching experience.</p>
+    <a href="#contact" class="btn">Book a Free Trial</a>
+  </div>
 
-<section>
+  <!-- ABOUT -->
+  <section>
+    <h2>About Me</h2>
+    <div class="box">
+      <p>
+        I am a professional English teacher with a Master’s degree in Education, TEFL certification,
+        and around 10 years of international teaching experience both online and offline.
+      </p>
+      <p>
+        As a non-native speaker, I deeply understand the challenges of learning English.
+        I teach with empathy, patience, and clarity, creating a safe and calm space where
+        students feel supported, confident, and respected.
+      </p>
+      <p>
+        I take my work seriously and responsibly. Every student is evaluated at the beginning,
+        their needs are discussed, and a personalized learning plan is created just for them.
+      </p>
+    </div>
+  </section>
 
-<!-- ABOUT -->
-<div class="box">
-  <h2>About Me</h2>
-  <p>
-  I am a professional English teacher with a Master’s degree in Education, a TEFL certificate, and around 10 years of international teaching experience both online and offline.
-  </p>
-  <p>
-  As a non-native speaker myself, I deeply understand the challenges students face: fear of mistakes, lack of confidence, and the pressure to sound perfect. My teaching style is empathetic, compassionate, patient, and calm.
-  </p>
-  <p>
-  I create a classroom where students feel trusted, supported, and emotionally safe. A space where you can speak freely, explore your voice, and grow without judgment.
-  </p>
-</div>
+  <!-- WHAT YOU GET -->
+  <section>
+    <h2>What You Get</h2>
+    <div class="grid">
+      <div class="box">Personalized curriculum for your goals</div>
+      <div class="box">Clear explanations and structure</div>
+      <div class="box">Visual materials & creative PPTs</div>
+      <div class="box">Calm and motivating classroom energy</div>
+      <div class="box">Progress tracking and feedback</div>
+      <div class="box">Confidence in real communication</div>
+    </div>
+  </section>
 
-<!-- WHAT YOU GET -->
-<div class="box">
-  <h2>What You Get</h2>
-  <p>✔ Deep understanding, not memorization</p>
-  <p>✔ Speaking confidence in real situations</p>
-  <p>✔ Custom-made PPTs and visual materials</p>
-  <p>✔ Interesting and meaningful topics</p>
-  <p>✔ Calm, supportive, and motivating atmosphere</p>
-  <p>✔ Lessons adapted to your personality and goals</p>
-</div>
+  <!-- SNEAK PEEK -->
+  <section>
+    <h2>Sneak Peek</h2>
+    <div class="box">
+      <p>Inside your lessons:</p>
+      <ul>
+        <li>Beautifully designed vocabulary slides</li>
+        <li>Conversation frameworks</li>
+        <li>Mini quizzes and speaking games</li>
+        <li>Real-life topic discussions</li>
+      </ul>
+      <p>This is how your English journey feels: clear, elegant, and effective.</p>
+    </div>
+  </section>
 
-<!-- HOW I WORK -->
-<div class="box">
-  <h2>How I Work</h2>
-  <p>
-  Before we start, I evaluate your level, your needs, and your personal goals.
-  </p>
-  <p>
-  Based on this, I create a personalized curriculum designed only for you. Every student follows an individual learning path.
-  </p>
-  <p>
-  I take my work seriously and responsibly because your time, energy, and progress matter.
-  </p>
-  <p>
-  Students who book 8 classes receive a complimentary 30-minute meditation or gentle yoga session upon request.
-  </p>
-</div>
+  <!-- TOPICS -->
+  <section>
+    <h2>Choose Your Topics</h2>
+    <div class="topics">
+      <span>Travel English</span>
+      <span>Business English</span>
+      <span>Daily Conversation</span>
+      <span>Confidence Speaking</span>
+      <span>Kids English</span>
+      <span>Interview Preparation</span>
+    </div>
+  </section>
 
-<!-- CHOOSE YOUR TOPIC -->
-<div class="box">
-  <h2>Choose Your Topic</h2>
-  <p>You can choose themes that match your emotions, lifestyle, and goals:</p>
-  <p class="topic">🧠 Confidence & Mindset</p>
-  <p class="topic">✈️ Travel & Culture</p>
-  <p class="topic">💼 Business & Communication</p>
-  <p class="topic">❤️ Relationships & Emotional Expression</p>
-  <p class="topic">🎭 Roleplay & Real-Life Situations</p>
-  <p class="topic">🧘 Calm English (slow speaking & presence)</p>
-  <p>
-  After you choose, I prepare personalized PPTs and lesson materials for you.
-  </p>
-</div>
+  <!-- BONUS -->
+  <section>
+    <h2>Special Bonus</h2>
+    <div class="box">
+      <p>
+        Students who book 8 classes receive one free 30-minute meditation or yoga session upon request.
+        A gift for your mind and body.
+      </p>
+    </div>
+  </section>
 
-<!-- SNEAK PEEK -->
-<div class="box">
-  <h2>Sneak Peek</h2>
-  <p>A small glimpse into how our classes feel.</p>
-  <p>Calm. Beautiful. Human. Real.</p>
-  <p>(PPT preview images will be added here soon)</p>
-</div>
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="box">
+      <p>Email: your-email@example.com</p>
+      <p>WhatsApp: +your-number</p>
+      <p>Instagram: @yourhandle</p>
+    </div>
+  </section>
 
-<!-- INTERACTIVE -->
-<div class="box">
-  <h2>Interactive Learning</h2>
-  <p>
-  My lessons include speaking games, quizzes, roleplay, and creative challenges.
-  </p>
-  <p>
-  Would you rather live by the sea or in the mountains? Why?
-  </p>
-  <p>
-  Pick a number and answer a surprise speaking question.
-  </p>
-  <p>
-  Learning feels alive, playful, and natural.
-  </p>
-</div>
-
-</section>
-
-<!-- CONTACT -->
-<div class="contact" id="contact">
-  <h2>Contact Me</h2>
-  <p>📱 WhatsApp: +84...</p>
-  <p>✉️ Email: your@email.com</p>
-  <p>Send me a message to book your trial class.</p>
-</div>
+  <footer>
+    English with Tatev © 2026
+  </footer>
 
 </body>
 </html>
