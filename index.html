@@ -78,14 +78,28 @@
       gap: 20px;
     }
 
-    .topics span {
-      display: inline-block;
-      background: #e4d6c3;
-      padding: 10px 18px;
-      border-radius: 20px;
-      margin: 5px;
-      font-size: 14px;
-    }
+    .topics button {
+  background: #e6d2bf;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  margin: 6px;
+  font-size: 14px;
+  color: #5c4033;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.topics button:hover {
+  background: #d3b89c;
+  transform: scale(1.05);
+}
+
+.topics button:active {
+  background: #c6a26d;
+  color: white;
+}
+
 
     footer {
       text-align: center;
@@ -156,16 +170,22 @@
 
   <!-- TOPICS -->
   <section>
-    <h2>Choose Your Topics</h2>
-    <div class="topics">
-      <span>Travel English</span>
-      <span>Business English</span>
-      <span>Daily Conversation</span>
-      <span>Confidence Speaking</span>
-      <span>Kids English</span>
-      <span>Interview Preparation</span>
-    </div>
-  </section>
+    <section>
+  <h2>Choose Your Topics</h2>
+  <p style="text-align:center; color:#6b4f3f;">
+    Pick what interests you. Your lessons will be built around your choices.
+  </p>
+
+  <div class="topics">
+    <button>Travel English</button>
+    <button>Business English</button>
+    <button>Daily Conversation</button>
+    <button>Confidence Speaking</button>
+    <button>Kids English</button>
+    <button>Interview Preparation</button>
+  </div>
+</section>
+
 
   <!-- BONUS -->
   <section>
