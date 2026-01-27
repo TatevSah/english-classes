@@ -1,112 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>English with Tatev</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: #f6f1eb;
-      color: #2f2f2f;
-      line-height: 1.6;
-    }
+<meta charset="UTF-8">
+<title>English with Tatev</title>
 
-    h1, h2, h3 {
-      color: #1f1f1f;
-      letter-spacing: 0.5px;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f6f1eb;
+  color: #2f2f2f;
+  line-height: 1.6;
+}
 
-    .hero {
-  background: linear-gradient(
-    rgba(92, 64, 51, 0.85),
-    rgba(92, 64, 51, 0.85)
-  ), linear-gradient(to right, #5c4033, #7a5a44);
-  color: #ffffff;
+h1, h2 {
+  color: #1f1f1f;
+}
+
+.hero {
+  background: linear-gradient(rgba(92,64,51,0.85), rgba(92,64,51,0.85)),
+              linear-gradient(to right, #5c4033, #7a5a44);
+  color: white;
   padding: 60px 20px;
   text-align: center;
 }
 
-  .hero h1 {
-  font-size: 46px;
-  margin-bottom: 20px;
-  color: #ffffff;
-  font-weight: 700;
+.hero h1 {
+  font-size: 42px;
 }
 
-   .hero p {
-  font-size: 20px;
+.hero p {
+  font-size: 18px;
   color: #f5f5f5;
 }
-  .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 12px 28px;
-      background-color: #e3c19a;
-      color: #5c4033;
-      text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background-color: #b2905f;
-    }
 
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .box {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-      margin-bottom: 20px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .topics button {
-  background: #e6d2bf;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 25px;
-  margin: 6px;
-  font-size: 14px;
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background-color: #e3c19a;
   color: #5c4033;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
 }
 
-.topics button:hover {
-  background: #d3b89c;
-  transform: scale(1.05);
-}
-
-.topics button:active {
-  background: #c6a26d;
-  color: white;
-}
-
-   footer {
-      text-align: center;
-      padding: 30px;
-      background: #1c1c1c;
-      color: white;
-    }
-    .gallery {
+section {
   max-width: 1100px;
-  margin: 40px auto;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+/* Sneak Peek + Worksheets layout */
+.clean-section {
+  max-width: 1100px;
+  margin: 120px auto;
+  padding: 0 20px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {
@@ -115,178 +95,135 @@
   padding: 15px;
   text-align: center;
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
 }
 
 .card img {
   width: 100%;
-  height: 140px;
+  height: 150px;
   object-fit: contain;
   background: #f9f4ef;
   padding: 10px;
   border-radius: 12px;
 }
 
-
 .card p {
-  margin-top: 12px;
-  font-size: 15px;
+  margin-top: 10px;
   color: #5c4033;
 }
-    .dual-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: start;
+
+.topics button {
+  background: #e6d2bf;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  margin: 6px;
+  font-size: 14px;
+  color: #5c4033;
+  cursor: pointer;
 }
 
-@media (max-width: 900px) {
-  .dual-section {
-    grid-template-columns: 1fr;
-  }
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #1c1c1c;
+  color: white;
 }
-
-
-  </style>
+</style>
 </head>
+
 <body>
 
-  <!-- HERO -->
-  <div class="hero">
-   <h1>English Classes Designed Around You</h1>
+<!-- HERO -->
+<div class="hero">
+  <h1>English Classes Designed Around You</h1>
+  <p>Private lessons for adults, professionals, and children · 10 years of international teaching experience</p>
+  <a href="#contact" class="btn">Book Your Free Trial Class</a>
+</div>
 
-    <p>Private lessons for adults, professionals, and children · 10 years of international teaching experience</p>
-   <a href="#contact" class="btn">Book Your Free Trial Class
-</a>
-  </div>
-
-  <!-- ABOUT -->
- <section>
-  <h2>About Me</h2>
-  <div style="display:flex; gap:30px; align-items:center; flex-wrap:wrap;">
-    
-    <img src="me.jpg" style="
-      width:200px;
-      border-radius:20px;
-      box-shadow:0 10px 25px rgba(0,0,0,0.15);
-    ">
- <div class="box">
-
-        I am a professional English teacher with a Master’s degree in Education, TEFL certification,
-        and around 10 years of international teaching experience both online and offline.
-      </p>
-      <p>
-        As a non-native speaker, I deeply understand the challenges of learning English.
-        I teach with empathy, patience, and clarity, creating a safe and calm space where
-        students feel supported, confident, and respected.
-      </p>
-      <p>
-        I take my work seriously and responsibly. Every student is evaluated at the beginning,
-        their needs are discussed, and a personalized learning plan is created just for them.
-      </p>
-    </div>
-  </section>
+<!-- ABOUT -->
 <section>
-  <h2>Sneak Peek Into Your Lessons</h2>
-  <p style="text-align:center; color:#6b4f3f;">
-    A small glimpse of how your English learning will look and feel.
-  </p>
-
-  <div style="
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap:20px;
-    margin-top:30px;
-  ">
-
- <section class="dual-section">
-
-  <!-- Sneak Peek Column -->
-  <div>
-    <h2>Sneak Peek Into Your Lessons</h2>
-    <p>A small glimpse of how your English learning will look and feel.</p>
-
-    <div class="card">
-      <img src="sneak1.jpg">
-      <p>Yoga & body awareness vocabulary</p>
-    </div>
-
-    <div class="card">
-      <img src="sneak2.jpg">
-      <p>Speaking through personality & emotions</p>
-    </div>
-
-    <div class="card">
-      <img src="sneak3.jpg">
-      <p>Creative speaking topics</p>
-    </div>
+  <h2>About Me</h2>
+  <div class="box">
+    <p>
+      I am a professional English teacher with a Master’s degree in Education, TEFL certification,
+      and around 10 years of international teaching experience both online and offline.
+    </p>
+    <p>
+      As a non-native speaker, I deeply understand the challenges of learning English.
+      I teach with empathy, patience, and clarity, creating a safe and calm space where
+      students feel supported, confident, and respected.
+    </p>
+    <p>
+      Every student is evaluated at the beginning and receives a personalized learning plan.
+    </p>
   </div>
-
-  <!-- Worksheets Column -->
-  <div>
-    <h2>Worksheets & Practice Materials</h2>
-    <p>Each student receives personalized worksheets to grow with confidence.</p>
-
-    <div class="card">
-      <img src="work1.jpg">
-      <p>Clear grammar practice</p>
-    </div>
-
-    <div class="card">
-      <img src="work2.jpg">
-      <p>Vocabulary in context</p>
-    </div>
-
-    <div class="card">
-      <img src="work3.jpg">
-      <p>Speaking & reflection tasks</p>
-    </div>
-  </div>
-
 </section>
 
+<!-- SNEAK PEEK + WORKSHEETS -->
+<section class="clean-section">
+  <div class="grid-2">
 
-  <!-- WHAT YOU GET -->
-  <section>
-    <h2>What You Get</h2>
-    <div class="grid">
-      <div class="box">Personalized curriculum for your goals</div>
-      <div class="box">Clear explanations and structure</div>
-      <div class="box">Visual materials & creative PPTs</div>
-      <div class="box">Calm and motivating classroom energy</div>
-      <div class="box">Progress tracking and feedback</div>
-      <div class="box">Confidence in real communication</div>
+    <!-- Sneak Peek -->
+    <div class="stack">
+      <h2>Sneak Peek Into Your Lessons</h2>
+      <p>A small glimpse of how your English learning will look and feel.</p>
+
+      <div class="card">
+        <img src="sneak1.jpg">
+        <p>Yoga & body awareness vocabulary</p>
+      </div>
+
+      <div class="card">
+        <img src="sneak2.jpg">
+        <p>Speaking through personality & emotions</p>
+      </div>
+
+      <div class="card">
+        <img src="sneak3.jpg">
+        <p>Creative speaking topics</p>
+      </div>
     </div>
-  </section>
 
-  <!-- SNEAK PEEK -->
-  <section>
-    <h2>Sneak Peek</h2>
-    <div class="box">
-      <p>Inside your lessons:</p>
-      <ul>
-        <li>Beautifully designed vocabulary slides</li>
-        <li>Conversation frameworks</li>
-        <li>Mini quizzes and speaking games</li>
-        <li>Real-life topic discussions</li>
-      </ul>
-      <p>This is how your English journey feels: clear, elegant, and effective.</p>
+    <!-- Worksheets -->
+    <div class="stack">
+      <h2>Worksheets & Practice Materials</h2>
+      <p>Each student receives personalized worksheets to grow with confidence.</p>
+
+      <div class="card">
+        <img src="work1.jpg">
+        <p>Clear grammar practice</p>
+      </div>
+
+      <div class="card">
+        <img src="work2.jpg">
+        <p>Vocabulary in context</p>
+      </div>
+
+      <div class="card">
+        <img src="work3.jpg">
+        <p>Speaking & reflection tasks</p>
+      </div>
     </div>
-  </section>
 
-  <!-- TOPICS -->
-  <section>
-    <section>
+  </div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section>
+  <h2>What You Get</h2>
+  <div class="grid">
+    <div class="box">Personalized curriculum for your goals</div>
+    <div class="box">Clear explanations and structure</div>
+    <div class="box">Visual materials & creative PPTs</div>
+    <div class="box">Calm and motivating classroom energy</div>
+    <div class="box">Progress tracking and feedback</div>
+    <div class="box">Confidence in real communication</div>
+  </div>
+</section>
+
+<!-- TOPICS -->
+<section>
   <h2>Choose Your Topics</h2>
-  <p style="text-align:center; color:#6b4f3f;">
-    Pick what interests you. Your lessons will be built around your choices.
-  </p>
-
   <div class="topics">
     <button>Travel English</button>
     <button>Business English</button>
@@ -297,60 +234,28 @@
   </div>
 </section>
 
-
-  <!-- BONUS -->
-  <section>
-    <h2>Special Bonus</h2>
-    <div class="box">
-      <p>
-        Students who book 8 classes receive one free 30-minute meditation or yoga session upon request.
-        A gift for your mind and body.
-      </p>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="box">
-      <p>Email: your-email@example.com</p>
-      <p>WhatsApp: +your-number</p>
-      <p>Instagram: @yourhandle</p>
-    </div>
-  </section>
-<section style="text-align:center;">
-  <h2>Your English Journey Starts Gently</h2>
+<!-- BONUS -->
+<section>
+  <h2>Special Bonus</h2>
   <div class="box">
-    <p style="font-size:18px;">
-      Learning English doesn’t have to feel stressful or rushed.  
-      It can feel calm, supportive, and beautifully structured.
-    </p>
-
-    <p style="font-size:18px;">
-      When you study with me, you don’t just book classes.  
-      You choose a space where you are understood, guided, and respected.
-    </p>
-
-    <p style="font-size:18px; font-weight:600; color:#5c4033;">
-      🌿 Special Offer
-    </p>
-
-    <p>
-      Book a package of 8 private English classes and receive  
-      <strong>one free 30-minute meditation or yoga session</strong> upon request.
-    </p>
-
-    <p>
-      A gift for your mind, your body, and your confidence.
-    </p>
-
-    <a href="#contact" class="btn">Start Your Journey</a>
+    Book 8 classes and receive one free 30-minute meditation or yoga session upon request.
+    A gift for your mind and body.
   </div>
 </section>
 
-  <footer>
-    English with Tatev © 2026
-  </footer>
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="box">
+    <p>Email: your-email@example.com</p>
+    <p>WhatsApp: +your-number</p>
+    <p>Instagram: @yourhandle</p>
+  </div>
+</section>
+
+<footer>
+  English with Tatev © 2026
+</footer>
 
 </body>
 </html>
