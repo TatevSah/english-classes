@@ -138,6 +138,19 @@
   font-size: 15px;
   color: #5c4033;
 }
+    .dual-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .dual-section {
+    grid-template-columns: 1fr;
+  }
+}
+
 
   </style>
 </head>
@@ -191,13 +204,13 @@
     margin-top:30px;
   ">
 
-  <section>
-  <h2>Sneak Peek Into Your Lessons</h2>
-  <p style="text-align:center; color:#6b4f3f;">
-    A small glimpse of how your English learning will look and feel.
-  </p>
+ <section class="dual-section">
 
-  <div class="gallery">
+  <!-- Sneak Peek Column -->
+  <div>
+    <h2>Sneak Peek Into Your Lessons</h2>
+    <p>A small glimpse of how your English learning will look and feel.</p>
+
     <div class="card">
       <img src="sneak1.jpg">
       <p>Yoga & body awareness vocabulary</p>
@@ -210,19 +223,15 @@
 
     <div class="card">
       <img src="sneak3.jpg">
-      <p>Fun, visual lessons for children</p>
+      <p>Creative speaking topics</p>
     </div>
   </div>
-</section>
 
-    <div class="box"
-<section>
-  <h2>Worksheets & Practice Materials</h2>
-  <p style="text-align:center; color:#6b4f3f;">
-    Each student receives personalized worksheets to practice and grow with confidence.
-  </p>
+  <!-- Worksheets Column -->
+  <div>
+    <h2>Worksheets & Practice Materials</h2>
+    <p>Each student receives personalized worksheets to grow with confidence.</p>
 
-  <div class="gallery">
     <div class="card">
       <img src="work1.jpg">
       <p>Clear grammar practice</p>
@@ -238,6 +247,7 @@
       <p>Speaking & reflection tasks</p>
     </div>
   </div>
+
 </section>
 
 
